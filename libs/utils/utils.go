@@ -3,6 +3,7 @@ package utils
 import (
 	"bytes"
 	"charming-slack/libs/database"
+	"fmt"
 	"image"
 	_ "image/jpeg"
 	_ "image/png"
@@ -92,7 +93,7 @@ func EmojiParser(s string) string {
 			return ":" + emojiName + ":"
 		}
 
-		return SixelEncode(emojiUrl, 24)
+		return SixelEncode(emojiUrl, 5)
 	})
 
 	return result
@@ -115,13 +116,13 @@ func SixelEncode(url string, width uint) string {
 	}
 
 	// resize image
-	m := resize.Resize(width, 0, img, resize.NearestNeighbor)
+	m := resize.Resize(width, width, img, resize.NearestNeighbor)
 
 	// encode the image as sixel and print to stdout
 	var buf bytes.Buffer
 	sixel.NewEncoder(&buf).Encode(m)
 	result := buf.String()
-
+	fmt.Println("\n" + result + "lol\n")
 	return result
 }
 

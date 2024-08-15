@@ -532,8 +532,6 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 			messageString = utils.UserIdParser(messageString, highlightedStyle, highlightedStyleBot, *m.slackClient)
 
-			messageString = utils.EmojiParser(messageString)
-
 			b.WriteString(messageStyle.Width(m.width-12).Render(messageString) + "\n\n")
 		}
 
