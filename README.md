@@ -55,5 +55,5 @@ settings:
   token_rotation_enabled: false
 ```
 
-![channel view](.github/images/channel-view.png)
-![message view](.github/images/message-view.png)
+![channel view](https://github.com/kcoderhtml/charming-slack/blob/main/.github/images/channel-view.png)
+![message view](https://github.com/kcoderhtml/charming-slack/blob/main/.github/images/message-view.png)
