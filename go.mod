@@ -15,7 +15,7 @@ require (
 	github.com/mattn/go-sixel v0.0.5
 	github.com/muesli/termenv v0.15.3-0.20240509142007-81b8f94111d5
 	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e
-	github.com/slack-go/slack v0.12.5
+	github.com/slack-go/slack v0.23.1
 )
 
 require (
@@ -38,7 +38,7 @@ require (
 	github.com/erikgeiser/coninput v0.0.0-20211004153227-1c3628e74d0f // indirect
 	github.com/go-logfmt/logfmt v0.6.0 // indirect
 	github.com/gorilla/css v1.0.1 // indirect
-	github.com/gorilla/websocket v1.5.1 // indirect
+	github.com/gorilla/websocket v1.5.3 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-localereader v0.0.1 // indirect
